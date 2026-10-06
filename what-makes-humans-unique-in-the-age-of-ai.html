@@ -31,6 +31,29 @@
       text-decoration: none;
     }
     .back-link:hover { color: #14213d; text-decoration: underline; }
+    .language-picker {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.5rem;
+      margin: 0 0 1.5rem;
+    }
+    .language-picker button {
+      padding: 0.55rem 0.85rem;
+      border: 1px solid #cbd1da;
+      border-radius: 999px;
+      background: #fff;
+      color: #344054;
+      cursor: pointer;
+      font: 600 0.9rem/1.4 Inter, ui-sans-serif, system-ui, sans-serif;
+    }
+    .language-picker button[aria-pressed="true"] {
+      border-color: #14213d;
+      background: #14213d;
+      color: #fff;
+    }
+    [hidden] { display: none !important; }
+    #telugu-content { font-family: "Noto Sans Telugu", "Nirmala UI", Gautami, sans-serif; }
+    #telugu-content p, #telugu-content li { line-height: 1.9; }
     h1, h2, h3 {
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.25;
@@ -82,6 +105,11 @@
 </head>
 <body>
   <main>
+    <nav class="language-picker" aria-label="Choose language">
+      <button type="button" id="english-button" aria-pressed="true" lang="en">English</button>
+      <button type="button" id="telugu-button" aria-pressed="false" lang="te">తెలుగు</button>
+    </nav>
+    <div id="english-content" lang="en">
     <a class="back-link" href="index.html">&larr; All posts</a>
     <article>
       <header>
@@ -130,6 +158,78 @@
       <p class="principle">A sharper tool does not replace the responsibility of deciding how—and whether—to use it.</p>
       <p class="closing">The future is not only about how capable AI becomes. It is also about the values people bring to its development and use, and how thoughtfully we share the work.</p>
     </article>
+    </div>
+    <div id="telugu-content" lang="te" hidden>
+      <a class="back-link" href="index.html">&larr; అన్ని వ్యాసాలు</a>
+      <article>
+        <header>
+          <h1>కృత్రిమ మేధస్సు యుగంలో మనుషులను ప్రత్యేకంగా నిలబెట్టేది ఏమిటి?</h1>
+          <p class="lead">అనేక సమస్యలను పరిష్కరించడంలో AI మనుషులకంటే మెరుగైతే, యంత్రానికి మరియు మనిషికి మధ్య తేడా చెరిగిపోతుందా?</p>
+        </header>
+
+        <p>అవసరం లేదు. సమస్యలను పరిష్కరించే సామర్థ్యం ఒక ముఖ్యమైన కొలమానం మాత్రమే; మనిషిని ప్రత్యేకంగా నిలబెట్టే అంశాలను అర్థం చేసుకోవడానికి అది ఒక్కటే మార్గం కాదు. ఒక యంత్రం వేగంగా లెక్కించగలదు, వర్గీకరించగలదు, పరిష్కారాలను రూపొందించగలదు. మనుషులు మాత్రం జీవితాన్ని అనుభవిస్తారు: సంబంధాలను ఏర్పరుచుకుంటారు, ఆశ్చర్యాన్ని అనుభూతి చెందుతారు, నిర్ణయాలు తీసుకుంటారు, వాటి పరిణామాలతో జీవిస్తారు.</p>
+
+        <p>తేడా ఎవరు ఎక్కువ తెలివైనవారనే దానిపైనే ఆధారపడదు. మనుషులు, AI పోషించే వేర్వేరు పాత్రలు—అలాగే అనుభవం, బాధ్యత గురించి సామర్థ్యం ఒక్కటే సమాధానం చెప్పలేని ప్రశ్నలు—కూడా ఇందులో ఉన్నాయి.</p>
+
+        <h2>కాలిక్యులేటర్ విరోధాభాసం</h2>
+        <p>ఒక సాధారణ కాలిక్యులేటర్ 7,834ను 9,211తో దాదాపు ఎవరికంటేనైనా వేగంగా గుణించగలదు. దాని వేగం దాన్ని మనిషిగా మార్చదు; అది నిర్దిష్టమైన పని చేసే సాధనం మాత్రమే. ఆధునిక AI మరింత సంక్లిష్టమైనది, స్పష్టమైన పరిమితులు లేని పనులనూ చేయగలదు. అయినప్పటికీ, మంచి ఫలితాన్ని ఇవ్వడం వల్లనే ఆ వ్యవస్థకు వ్యక్తిగత అనుభవం, స్వంత లక్ష్యాలు లేదా మానవ అర్థంలో అవగాహన ఉన్నాయని నిర్ధారించలేం.</p>
+        <p>ఇక్కడ జాగ్రత్తగా ఆలోచించడం అవసరం: యంత్రాల్లో చైతన్యం ఉందా అన్నది ఇంకా చర్చనీయాంశమే. సరళంగా మాట్లాడగలగడాన్ని అంతర్గత అనుభవానికి సాక్ష్యంగా చూడకూడదు; భవిష్యత్తు వ్యవస్థలు ఈ ప్రశ్నలను మళ్లీ ముందుకు తేవచ్చనే అవకాశాన్నీ తోసిపుచ్చకూడదు.</p>
+
+        <h2>వేర్వేరు బలాలు, వేర్వేరు బాధ్యతలు</h2>
+        <div class="comparison" aria-label="AI శాస్త్రవేత్త మరియు మానవ శాస్త్రవేత్త పాత్రల పోలిక">
+          <section>
+            <h3>AI వ్యవస్థ</h3>
+            <ul>
+              <li>విపరీతమైన సమాచారాన్ని విశ్లేషించి, క్లిష్టమైన సాంకేతిక సమస్యలను పరిష్కరించడంలో సహాయపడగలదు.</li>
+              <li>నమూనాలను గుర్తించడం, ఆలోచనలను పరీక్షించడం, పునరావృత పనులను వేగవంతం చేయడం ద్వారా పరిశోధనకు తోడ్పడగలదు.</li>
+              <li>తన ఫలితాలను మనుషులు ఎలా ఉపయోగించాలనే దానికి నైతిక బాధ్యత వహించదు.</li>
+            </ul>
+          </section>
+          <section>
+            <h3>మానవ శాస్త్రవేత్త</h3>
+            <ul>
+              <li>జీవిత అనుభవం, జిజ్ఞాస, ఆశ్చర్యభావాన్ని ఒక ప్రశ్నకు తీసుకురాగలడు.</li>
+              <li>ప్రాధాన్యతలను నిర్ణయించి, ఏ సమస్యలను పరిష్కరించాలో ఎంచుకోగలడు.</li>
+              <li>పరిణామాలను తూకం వేసి, నిర్ణయాలు మరియు ఆవిష్కరణలకు ఇతరుల ముందు సమాధానం చెప్పాలి.</li>
+            </ul>
+          </section>
+        </div>
+
+        <h2>మానవ అంశం ఎందుకు ముఖ్యం?</h2>
+        <p>సమస్యలను పరిష్కరించే సామర్థ్యమే మొత్తం కథ కాదని మానవ జీవితంలోని మూడు అంశాలు చూపిస్తాయి:</p>
+        <ul>
+          <li><strong>ఉద్దేశ్యం:</strong> అవసరాలు, విలువలు, భవిష్యత్తుపై ఆశల ఆధారంగా మనుషులు లక్ష్యాలను ఎంచుకుంటారు. ఒక లక్ష్యాన్ని సాధించడంలో AI సహాయపడగలదు; కానీ ఏ లక్ష్యాలు సాధించదగినవో నిర్ణయించే బాధ్యత వ్యక్తులు, సంస్థలదే.</li>
+          <li><strong>నైతికత, శ్రద్ధ:</strong> ఆసుపత్రి షెడ్యూల్‌ను మెరుగుపరచడంలో ఒక వ్యవస్థ సహాయపడవచ్చు. కానీ రోగులకు సంబంధించిన నిర్ణయాల్లో సమర్థత మాత్రమే కాదు—గౌరవం, న్యాయం, మానవ విచక్షణ కూడా అవసరం.</li>
+          <li><strong>అనుభవం:</strong> ఆవిష్కరణలో పాల్గొనే మనుషులు నిరాశ, ఉత్సాహం లేదా విస్మయాన్ని అనుభవించవచ్చు. AIకి ఇలాంటి అనుభవం సాధ్యమా అనేది ఇంకా తెరిచి ఉన్న ప్రశ్న. భావాన్ని నమ్మదగిన రీతిలో వర్ణించడాన్ని, ఆ భావాన్ని నిజంగా అనుభవిస్తున్నదానికి సాక్ష్యంగా భావించకూడదు.</li>
+        </ul>
+
+        <h2>కలిసి పనిచేయడం</h2>
+        <p>పరిశోధన, వైద్యం, విద్య, సృజనాత్మక పనుల్లో AI మరింత సామర్థ్యవంతమైన సాధనంగా మారవచ్చు. దాంతో మానవుల పాత్ర అనవసరమవదు. AI అన్వేషణ, సాధన పరిధిని విస్తరించడంలో తోడ్పడితే, మనుషులు దిశానిర్దేశం, సందర్భం, పర్యవేక్షణ, జవాబుదారీతనాన్ని అందించగలరు.</p>
+        <p class="principle">పదునైన సాధనం దాన్ని ఎలా—లేదా ఉపయోగించాలా వద్దా అని—నిర్ణయించే బాధ్యతను తొలగించదు.</p>
+        <p class="closing">భవిష్యత్తు AI ఎంత సామర్థ్యవంతమవుతుందనే దానితో మాత్రమే నిర్ణయించబడదు. దాని అభివృద్ధి, వినియోగంలో మనుషులు చూపే విలువలు, ఆ పనిని ఎంత బాధ్యతగా పంచుకుంటామనే అంశాలూ అంతే ముఖ్యం.</p>
+      </article>
+    </div>
   </main>
+  <script>
+    const englishButton = document.querySelector("#english-button");
+    const teluguButton = document.querySelector("#telugu-button");
+    const englishContent = document.querySelector("#english-content");
+    const teluguContent = document.querySelector("#telugu-content");
+
+    function setLanguage(language) {
+      const isTelugu = language === "te";
+      englishContent.hidden = isTelugu;
+      teluguContent.hidden = !isTelugu;
+      englishButton.setAttribute("aria-pressed", String(!isTelugu));
+      teluguButton.setAttribute("aria-pressed", String(isTelugu));
+      document.documentElement.lang = language;
+      document.title = isTelugu
+        ? "కృత్రిమ మేధస్సు యుగంలో మనుషులను ప్రత్యేకంగా నిలబెట్టేది ఏమిటి? | Field Notes"
+        : "What Makes Humans Unique in the Age of AI? | Field Notes";
+    }
+
+    englishButton.addEventListener("click", () => setLanguage("en"));
+    teluguButton.addEventListener("click", () => setLanguage("te"));
+  </script>
 </body>
 </html>
